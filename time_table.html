@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Department Timetable - Spring 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Department of Software Engineering 💻</h1>
+            <p class="subtitle">Spring 2026 • Class Timetable</p>
+        </header>
+
+        <!-- Class Selector -->
+        <div class="class-selector">
+            <label for="classSelect">📚 Select Your Class:</label>
+            <select id="classSelect" onchange="showTimetable()">
+                <option value="bs25-2a">BS-25-II-A Morning</option>
+                <option value="bs25-2b">BS-25-II-B Morning</option>
+                <option value="bs25-2c">BS-25-II-C Morning</option>
+                <option value="bs25-2d">BS-25-II-D Morning</option>
+                <option value="bs24-4a">BS-24-IV-A Morning</option>
+                <option value="bs24-4b">BS-24-IV-B Morning</option>
+                <option value="bs24-4c">BS-24-IV-C Morning</option>
+                <option value="bs23-6a">BS-23-VI-A Morning</option>
+                <option value="bs23-6b">BS-23-VI-B Morning</option>
+                <option value="bs23-6c">BS-23-VI-C Morning</option>
+                <option value="bs22-8a">BS-22-VIII-A Morning</option>
+                <option value="bs22-8b">BS-22-VIII-B Morning</option>
+                <option value="bs22-8c">BS-22-VIII-C Morning</option>
+            </select>
+        </div>
+
+        <!-- Timetable for BS-25-II-A -->
+        <div id="bs25-2a" class="timetable-section active">
+            <h2>BS-25-II-A Morning</h2>
+            <div class="table-container">
+                <table class="timetable">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>8:45 - 10:15 AM</th>
+                            <th>10:15 - 11:45 AM</th>
+                            <th>11:45 AM - 1:15 PM</th>
+                            <th class="prayer-break">1:15 - 1:30 PM</th>
+                            <th>1:30 - 3:00 PM</th>
+                            <th>3:00 - 4:30 PM</th>
+                            <th>4:30 - 6:00 PM</th>
+                            <th>6:00 - 7:30 PM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-cell">Monday</td>
+                            <td class="subject-cell">
+                                <div class="subject">Database Systems Lab</div>
+                                <div class="teacher">Mr. Muhammad Ejaz</div>
+                                <div class="room">B-214 Lab</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Object Oriented Programming</div>
+                                <div class="teacher">Ms. Sameen Gul</div>
+                                <div class="room">B-201 AKB</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Database Systems</div>
+                                <div class="teacher">Mr. Muhammad Ejaz</div>
+                                <div class="room">B-202 AKB</div>
+                            </td>
+                            <td class="prayer-cell" rowspan="5">Zuhr Prayer Break</td>
+                            <td class="subject-cell">
+                                <div class="subject">Digital Logic Design</div>
+                                <div class="teacher">Ms. Saher Aftab</div>
+                                <div class="room">B-207-B AKB</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Object Oriented Programming</div>
+                                <div class="teacher">Ms. Sameen Gul</div>
+                                <div class="room">B-201 AKB</div>
+                            </td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Tuesday</td>
+                            <td class="subject-cell">
+                                <div class="subject">Linear Algebra</div>
+                                <div class="teacher">Mr. Zulfiqar Umer</div>
+                                <div class="room">NB-201 Adj-to-R.Block</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Digital Logic Design</div>
+                                <div class="teacher">Ms. Saher Aftab</div>
+                                <div class="room">NB-204 Adj-to-R.Block</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Database Systems</div>
+                                <div class="teacher">Mr. Muhammad Ejaz</div>
+                                <div class="room">B-217 AKB</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Linear Algebra</div>
+                                <div class="teacher">Mr. Zulfiqar Umer</div>
+                                <div class="room">NB-201 Adj-to-R.Block</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Object Oriented Programming (Lab)</div>
+                                <div class="teacher">Ms. Sameen Gul</div>
+                                <div class="room">B-214 Lab</div>
+                            </td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Wednesday</td>
+                            <td class="subject-cell">
+                                <div class="subject">Ideology and Constitution of Pakistan</div>
+                                <div class="teacher">Ms. Shahla Gull</div>
+                                <div class="room">NB-222 Hall Adj-to-Lib</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Civics and Community Engagement</div>
+                                <div class="teacher">Ms. Bushra Firdous</div>
+                                <div class="room">Adj-to-Lib B2-22</div>
+                            </td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Thursday</td>
+                            <td class="subject-cell">
+                                <div class="subject">Database Systems Lab</div>
+                                <div class="teacher">Mr. Muhammad Ejaz</div>
+                                <div class="room">B-214 Lab</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Object Oriented Programming (Lab)</div>
+                                <div class="teacher">Ms. Sameen Gul</div>
+                                <div class="room">B-205 AKB</div>
+                            </td>
+                            <td class="subject-cell">
+                                <div class="subject">Ideology and Constitution of Pakistan</div>
+                                <div class="teacher">Ms. Shahla Gull</div>
+                                <div class="room">Adjacent to R block B1-222</div>
+                            </td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Friday</td>
+                            <td class="subject-cell">
+                                <div class="subject">Ethics</div>
+                                <div class="teacher">FEQ-1</div>
+                                <div class="room">B-205 AKB</div>
+                            </td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- More timetables will be added in next commits -->
+    </div>
+
+    <script>
+        function showTimetable() {
+            const select = document.getElementById('classSelect');
+            const sections = document.querySelectorAll('.timetable-section');
+            
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            const selectedSection = document.getElementById(select.value);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
